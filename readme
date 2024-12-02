@@ -1,0 +1,14 @@
+🎉 Hello sudoAI Team ! 🎉
+We’re excited to announce our AI Challenge for this week: Spam Email Detection! 🛡️📧
+🔍 The Challenge:
+Your mission is to build a machine learning model that can classify emails as spam or not spam! 
+You’ll also create a small user interface where we can input a sample email and test your model in action. 💻✨
+ 
+ 📝 What You Need to Submit:
+A Jupyter Notebook showing:
+Data preprocessing.
+Model training and evaluation.
+Clear documentation of your steps and logic.
+A Small Interface (can be web-based or CLI) that allows testing of new email samples with your model.
+
+
