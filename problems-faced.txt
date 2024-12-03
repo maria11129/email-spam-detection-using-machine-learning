@@ -1,0 +1,41 @@
+just a simple text file to mention some problems i faced while making this model:
+
+1-a new lesson i learned was to test your code block by block , this is so simple , but it was a life changing method!!
+2-restarting python kernel specially when working with data science workflows:
+            explanation:
+                        ********* Clears Memory: **********
+            >When you run code, Python stores variables, data, and other objects in memory. Over time, this can clutter the                workspace and use up significant memory.
+             >Restarting the kernel clears all variables, functions, and objects, effectively freeing up memory and reducing                the chances of running out of resources.
+
+                      ********* 2. Eliminates State Issues*********
+             >A long-running kernel can accumulate "state" issues, where earlier code runs affect the current status unpredictably.
+              >Restarting ensures that code execution starts in a clean environment, reducing bugs caused by unintended     dependencies or leftover variables.
+
+                  ********* 3. Fixes Import/Reload Problems*********
+             >If you modify a module or script and re-import it, Python might not load the latest changes due to caching (import uses the already loaded version).
+             >Restarting ensures that your imports start fresh, reflecting the most recent changes in your code.
+
+                 *********4. Avoids Conflicts*********
+             >Running different code snippets without restarting can create conflicts between libraries or functions,  especially if the same variables or configurations are reused.
+             >Restarting ensures a clean slate, avoiding conflicts between old and new code.
+
+                *********5. Handles Crashes or Errors*********
+            >Certain operations, like infinite loops or memory-intensive tasks, can crash or hang the kernel.
+Restarting is often the easiest way to recover from such issues without manually troubleshooting or debugging.
+
+           ***************6. Improves Debugging********************
+            >Debugging in a cluttered environment can be tricky because old variables or functions might interfere with the results.
+           >Restarting provides a consistent, reproducible environment to test your code.
+
+
+
+3-imbalanced data:
+   my ham data was so much more than the spam data , which made the model to always consider the testing email i was using as hams , 
+    to solve that i used the SMOTE method , how?
+           >i had ham     4825  spam     747
+           > so i used SMOTE and not other mothods because :
+ >>The dataset size is manageable, and SMOTE will help generate synthetic examples of spam without losing any ham data.
+ >>Oversampling (duplicating spam) could lead to overfitting because you would have ~4000 duplicated spam emails.
+ >>Undersampling (reducing ham) would discard most of the ham examples, significantly reducing the dataset size and potentially losing important patterns in ham emails.
+
+
