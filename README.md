@@ -94,3 +94,4 @@ The above **pair plot** was created to analyze the relationships between key fea
 1. **Class Separation** : The plot highlights differences in feature values between spam and ham, helping us validate that the selected features are meaningful for classification.
 
 This analysis guided us in preprocessing the data and designing an effective classification model for spam detection.
+![image alt](https://github.com/maria11129/email-spam-detection-using-machine-learning/blob/7b90cccb86cf69464bdd7e4bb006f09331e37881/images/4.png)
