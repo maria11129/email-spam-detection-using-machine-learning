@@ -7,11 +7,14 @@ import boxen from "boxen";
 
 console.log(
   boxen(chalk.bold.greenBright("🌟 Welcome to Spam Detector CLI! 🌟"), {
-    padding: 1,
-    margin: 1,
-    borderStyle: "double",
-    borderColor: "yellow",
-    align: "center",
+   
+    padding: 2,
+    margin: 2,
+    borderStyle: "round",  // Smooth, rounded borders for a soft, modern look
+    borderColor: "magenta", // Bold magenta border for vibrancy
+    backgroundColor: "black", // Contrasting black background
+    align: "center", // Center-align the text inside the box
+
   })
 );
 
@@ -54,10 +57,14 @@ exec(
 
     console.log(
       boxen(chalk.blueBright.bold(`\nResult:\n${stdout.trim()}\n`), {
-        padding: 1,
-        margin: 1,
-        borderStyle: "round",
-        borderColor: "red",
+  
+        padding: 2,
+        margin: 2,
+        borderStyle: "double",  // You can change this to "bold" or "round" for different looks
+        borderColor: "magenta", // Bright magenta border for more vibrancy
+        backgroundColor: "black",  // Black background for contrast
+        align: "center",  // Center-align the text inside the box
+    
       })
     );
   }
