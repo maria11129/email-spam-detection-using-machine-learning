@@ -34,3 +34,6 @@ spamdetector -e "Your email content here"
 `
 
 ### Example output:
+
+
+![CLI Output Example](image/CLI-output.png)
