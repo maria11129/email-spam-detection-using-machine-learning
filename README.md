@@ -20,8 +20,6 @@ git clone https://github.com/maria11129/email-spam-detection-using-machine-learn
 
 ```
 
-
-
 ## Usage
 
 #### Run the CLI with the email content:
@@ -35,3 +33,32 @@ git clone https://github.com/maria11129/email-spam-detection-using-machine-learn
 ### Example output:
 
 ![image alt](https://github.com/maria11129/email-spam-detection-using-machine-learning/blob/76fd0def0a4d7251f149092696b04706f3cede3e/images/CLI-output.png)
+
+#### **Data Visualization**
+
+To better understand the dataset, I visualized the key aspects of the data, such as class distribution and common words in spam and ham emails.
+
+1. **Class Distribution**
+   The dataset was imbalanced, with significantly more "Ham" emails than "Spam." This imbalance can bias the model toward predicting "Ham." To address this, I applied SMOTE (Synthetic Minority Oversampling Technique) to balance the dataset.
+   > The graph above shows the proportion of "Ham" and "Spam" emails before applying SMOTE.
+   >
+
+---
+
+2. **Word Frequency Analysis**
+   I created a word cloud to visualize the most frequent words in spam and ham emails. This helped identify distinct patterns in text, such as spam emails containing words like "Congratulations," "Free," and "Prize."
+
+   * **Spam Word Cloud**
+   * **Ham Word Cloud**
+
+   > These visualizations provided insight into the dataset's text patterns and guided the feature engineering process.
+   >
+
+---
+
+3. **TF-IDF Distribution**
+   I plotted the TF-IDF scores of spam and ham emails to understand their separation in the feature space. This helped validate that TF-IDF was effectively transforming the data.
+   > This plot helped confirm that spam and ham emails have distinguishable TF-IDF patterns, aiding classification.
+   >
+
+---
