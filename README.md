@@ -34,3 +34,5 @@ spamdetector -e "Your email content here"
 `
 
 ### Example output:
+
+![image alt](https://github.com/maria11129/email-spam-detection-using-machine-learning/blob/76fd0def0a4d7251f149092696b04706f3cede3e/images/CLI-output.png)
