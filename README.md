@@ -62,3 +62,4 @@ To better understand the dataset, I visualized the key aspects of the data, such
    >
 
 ---
+![image alt](https://github.com/maria11129/email-spam-detection-using-machine-learning/blob/d5451f13f10be4ac910fe153d4c83d334d76ace3/images/big-one.png)
