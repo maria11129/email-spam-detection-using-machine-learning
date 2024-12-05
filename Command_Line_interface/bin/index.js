@@ -5,7 +5,6 @@ import { hideBin } from "yargs/helpers";
 import chalk from "chalk";
 import boxen from "boxen";
 
-// Create a visually appealing header
 console.log(
   boxen(chalk.bold.greenBright("🌟 Welcome to Spam Detector CLI! 🌟"), {
     padding: 1,
@@ -16,7 +15,6 @@ console.log(
   })
 );
 
-// Setup CLI arguments with `yargs`
 const argv = yargs(hideBin(process.argv))
   .usage(
     chalk.cyanBright("Usage: spamdetector -e [email content]\n\n") +
@@ -30,20 +28,18 @@ const argv = yargs(hideBin(process.argv))
   })
   .example(
     chalk.cyanBright("spamdetector -e 'Congratulations! You've won a prize!'"),
-    chalk.yellow("Analyze an email for spam content")
+    chalk.yellowBright("Analyze an email for spam content")
   )
   .help("h")
   .alias("h", "help")
   .epilog(chalk.magentaBright("Created by: maria kouchkar 🚀"))
   .argv;
 
-// Analyze the email content if provided
 console.log(
   chalk.yellow("\n🔍 Analyzing email content: ") +
     chalk.whiteBright.bold(`"${argv.email}"`)
 );
 
-// Call Python spam detection script
 exec(
   `python spam_detector.py "${argv.email}"`,
   (error, stdout, stderr) => {
@@ -56,13 +52,12 @@ exec(
       return;
     }
 
-    // Display results in a styled box
     console.log(
       boxen(chalk.blueBright.bold(`\nResult:\n${stdout.trim()}\n`), {
         padding: 1,
         margin: 1,
         borderStyle: "round",
-        borderColor: "blue",
+        borderColor: "red",
       })
     );
   }
