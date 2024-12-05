@@ -61,4 +61,34 @@ To better understand the dataset, I visualized the key aspects of the data, such
    > This plot helped confirm that spam and ham emails have distinguishable TF-IDF patterns, aiding classification.
    >
 
+
+
 ---
+
+
+
+### Data Visualization: Pair Plot 📊
+
+The above **pair plot** was created to analyze the relationships between key features in the dataset:
+
+* **Features analyzed** :
+* `num_characters`: The total number of characters in the email.
+* `num_words`: The total number of words in the email.
+* `num_sentences`: The total number of sentences in the email.
+* **Color Coding** :
+* Orange points (`target = 1`) represent **spam** emails.
+* Blue points (`target = 0`) represent **ham** (non-spam) emails.
+
+#### Purpose of this visualization:
+
+1. **Feature Correlation** : The scatter plots in the off-diagonal cells help us understand how features like `num_characters` and `num_words` are correlated.
+
+* For example, longer emails (more characters) tend to have more words, as shown by the linear relationship.
+
+1. **Distribution of Features** : The diagonal cells show the distribution of each feature.
+
+* Spam emails tend to have distinct distributions compared to ham emails, which aids in distinguishing the two classes during model training.
+
+1. **Class Separation** : The plot highlights differences in feature values between spam and ham, helping us validate that the selected features are meaningful for classification.
+
+This analysis guided us in preprocessing the data and designing an effective classification model for spam detection.
