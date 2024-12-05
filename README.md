@@ -42,7 +42,7 @@ To better understand the dataset, I visualized the key aspects of the data, such
    The dataset was imbalanced, with significantly more "Ham" emails than "Spam." This imbalance can bias the model toward predicting "Ham." To address this, I applied SMOTE (Synthetic Minority Oversampling Technique) to balance the dataset.
    > The graph above shows the proportion of "Ham" and "Spam" emails before applying SMOTE.
    >
-
+![image alt](https://github.com/maria11129/email-spam-detection-using-machine-learning/blob/c8192c5460a470a2f26a9843fc8f146ebdb35a81/images/1.png)
 ---
 
 2. **Word Frequency Analysis**
@@ -53,6 +53,7 @@ To better understand the dataset, I visualized the key aspects of the data, such
 
    > These visualizations provided insight into the dataset's text patterns and guided the feature engineering process.
    >
+![image alt](https://github.com/maria11129/email-spam-detection-using-machine-learning/blob/c8192c5460a470a2f26a9843fc8f146ebdb35a81/images/2.png)
 
 ---
 
@@ -61,7 +62,7 @@ To better understand the dataset, I visualized the key aspects of the data, such
    > This plot helped confirm that spam and ham emails have distinguishable TF-IDF patterns, aiding classification.
    >
 
-
+![image alt](https://github.com/maria11129/email-spam-detection-using-machine-learning/blob/c8192c5460a470a2f26a9843fc8f146ebdb35a81/images/3.png)
 
 ---
 
