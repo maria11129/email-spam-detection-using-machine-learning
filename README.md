@@ -25,7 +25,7 @@ git clone https://github.com/maria11129/email-spam-detection-using-machine-learn
 #### Run the CLI with the email content:
 
 ```
-`cd Command_line_interface
+`cd Command_Line_interface
  spamdetector -e "Your email content here" `
 
 ```
