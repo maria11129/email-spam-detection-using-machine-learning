@@ -26,7 +26,7 @@ git clone https://github.com/maria11129/email-spam-detection-using-machine-learn
 
 ```
 `cd Command_line_interface
- spamdetector -e "Your email content here" cd Command_line_interface spamdetector -e "Your email content here" `
+ spamdetector -e "Your email content here" `
 
 ```
 
