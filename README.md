@@ -25,8 +25,8 @@ git clone https://github.com/maria11129/email-spam-detection-using-machine-learn
 #### Run the CLI with the email content:
 
 ```
-`cd Command_line_interface
- spamdetector -e "Your email content here" cd Command_line_interface spamdetector -e "Your email content here" `
+`cd Command_Line_interface
+ spamdetector -e "Your email content here" `
 
 ```
 
@@ -42,7 +42,7 @@ To better understand the dataset, I visualized the key aspects of the data, such
    The dataset was imbalanced, with significantly more "Ham" emails than "Spam." This imbalance can bias the model toward predicting "Ham." To address this, I applied SMOTE (Synthetic Minority Oversampling Technique) to balance the dataset.
    > The graph above shows the proportion of "Ham" and "Spam" emails before applying SMOTE.
    >
-
+![image alt](https://github.com/maria11129/email-spam-detection-using-machine-learning/blob/c8192c5460a470a2f26a9843fc8f146ebdb35a81/images/1.png)
 ---
 
 2. **Word Frequency Analysis**
@@ -53,6 +53,7 @@ To better understand the dataset, I visualized the key aspects of the data, such
 
    > These visualizations provided insight into the dataset's text patterns and guided the feature engineering process.
    >
+![image alt](https://github.com/maria11129/email-spam-detection-using-machine-learning/blob/c8192c5460a470a2f26a9843fc8f146ebdb35a81/images/2.png)
 
 ---
 
@@ -61,7 +62,7 @@ To better understand the dataset, I visualized the key aspects of the data, such
    > This plot helped confirm that spam and ham emails have distinguishable TF-IDF patterns, aiding classification.
    >
 
-
+![image alt](https://github.com/maria11129/email-spam-detection-using-machine-learning/blob/c8192c5460a470a2f26a9843fc8f146ebdb35a81/images/3.png)
 
 ---
 
@@ -93,3 +94,4 @@ The above **pair plot** was created to analyze the relationships between key fea
 1. **Class Separation** : The plot highlights differences in feature values between spam and ham, helping us validate that the selected features are meaningful for classification.
 
 This analysis guided us in preprocessing the data and designing an effective classification model for spam detection.
+![image alt](https://github.com/maria11129/email-spam-detection-using-machine-learning/blob/7b90cccb86cf69464bdd7e4bb006f09331e37881/images/4.png)
